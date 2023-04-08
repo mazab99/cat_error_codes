@@ -58,52 +58,16 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text('Cat error codes'),
+        backgroundColor: Colors.red,
+      ),
       body: SizedBox(
         width: double.infinity,
         height: double.infinity,
         child: Column(
           children: [
-            Container(
-              padding: const EdgeInsets.only(
-                left: 20,
-                right: 20,
-                top: 50,
-              ),
-              width: double.infinity,
-              height: 200,
-              decoration: const BoxDecoration(
-                color: Colors.blue,
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(10),
-                  bottomRight: Radius.circular(10),
-                ),
-              ),
-              child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: const [
-                    Text(
-                      "Any weird HTTP code that you don't know?",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        fontFamily: 'SF Pro',
-                        fontWeight: FontWeight.bold,
-                      ),
-                      textAlign: TextAlign.justify,
-                    ),
-                    Text(
-                      "No, problem. I got you covered.",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        fontFamily: 'SF Pro',
-                        fontWeight: FontWeight.normal,
-                      ),
-                      textAlign: TextAlign.justify,
-                    )
-                  ]),
-            ),
             Container(
               margin: const EdgeInsets.only(
                 left: 20,
